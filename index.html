@@ -1,185 +1,494 @@
-<!-- 
-    __________________________________________________________________________
-    **************************************************************************
-    **************************************************************************
-    ** Name                     : Portfolio Website                         **
-    ** Technologies Used        : HTML, CSS & SASS                          **
-    ** Others Tools             : Visual Studio Code & Google Chrome        **
-    ** Dated                    : 02-Dec-2021                               **
-    ** Developed By             : Pradip Golui                              **
-    ** Maitenance & Managed By  : Pradip Golui                              **
-    ** Copyright                : All Copyright Reserved 2021               **
-    ** Developed From           : https://www.pradipgolui.com               **
-    ** Page                     : index.html || Home Page                   **       
-    **                                                                      **
-    **************************************************************************
-    **************************************************************************
- -->
- <!-- This Is Home Page Of Portfolio Website -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.css">
-    <title>Pradip Golui | UI/UX Designer | Phtotographer </title>
-</head>
-<body>
-    <!-- Main Header Section -->
-    <header id="header-home">
-        <div class="container">
-            <!-- Main Navigation Bar & Link  -->
-            <nav id="main-nav">
-                <!-- Logo of the portfolio -->
-                <h1>PG</h1>
-                <!-- <img src="img/logo.png" alt="My Portfolio" id="logo"> -->
-                <ul>
-                    <li><a href="index.html" class="current">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="work.html">Work</a></li>
-                    <li><a href="education.html">Education</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <!-- Main Header Content Section -->
-            <div class="header-content">
-                <h1>I Am Pradip The <span class="txt-type" data-wait="3000" data-words='["Full-Stack Web Developer", "UI/UX Designer", "Digital Marketer"]'></span></h1>
-                <p class="lead">I specialize in Full-Stack Web Development & UI/UX Designer</p>
-                <a href="work.html" class="btn-light">View My Work</a>
-            </div>
-        </div>
-    </header>
 
-    <!-- Section A: Specialization Of Work In Below -->
-    <div id="home-a" class="text-center py-2">
-        <div class="container">
-            <h2 class="section-title">I Specialize In</h2>
-            <div class="bottom-line"></div>
-            <p class="lead">
-                Full-Stack Web development as well as creation digital masterpiece and UI/UX layouts for websites and mobile applications
-            </p>
-            <div class="specials">
-                <div>
-                    <i class="fas fa-file-alt fa-2x"></i>
-                    <h3>Concepting</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis rem doloribus distinctio excepturi numquam facere labore consectetur provident! Fuga, accusamus!</p>
-                </div>
-                <div>
-                    <i class="fas fa-desktop fa-2x"></i>
-                    <h3>UI/UX</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis rem doloribus distinctio excepturi numquam facere labore consectetur provident! Fuga, accusamus!</p>
-                </div>
-                <div>
-                    <i class="fas fa-object-ungroup fa-2x"></i>
-                    <h3>Visual Design</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis rem doloribus distinctio excepturi numquam facere labore consectetur provident! Fuga, accusamus!</p>
-                </div>
-                <div>
-                    <i class="fas fa-thumbs-up fa-2x"></i>
-                    <h3>Interaction</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis rem doloribus distinctio excepturi numquam facere labore consectetur provident! Fuga, accusamus!</p>
+<head>
+    <meta charset="utf-8">
+    <title>Pradip Golui</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <!-- <link href="img/favicon.ico" rel="icon"> -->
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand ml-lg-3">
+            <h1 class="m-0 display-5"><span class="text-primary">Pradip </span>Golui</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav m-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#qualification" class="nav-item nav-link">Education</a>
+                <a href="#skill" class="nav-item nav-link">Skill</a>
+                <a href="#service" class="nav-item nav-link">Service</a>
+                <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+                <!-- <a href="#testimonial" class="nav-item nav-link">Review</a> -->
+                <!-- <a href="#blog" class="nav-item nav-link">Blog</a>  -->
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="mailto:pradipgolui77@gmail.com" class="btn btn-outline-primary d-none d-lg-block">Hire Me</a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>        
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Video Modal End -->
 
-    <!-- Section B: Visual Representation Of Process Of Working-->
-    <section id="home-b" class="text-center py-2">
-        <div class="stats">
-            <div>
-                <ul>
-                    <li><i href="" class="fas fa-users fa-3x"></i></li>
-                    <li class="stats-title">Clients</li>
-                    <li class="stats-number">2</li>   
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li><i href="" class="fas fa-award fa-3x"></i></li>
-                    <li class="stats-title">Awards</li>
-                    <li class="stats-number">1</li>   
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li><i href="" class="fas fa-hourglass-start fa-3x"></i></li>
-                    <li class="stats-title">Hours Worked</li>
-                    <li class="stats-number">11</li>   
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li><i href="" class="fas fa-code-branch fa-3x"></i></li>
-                    <li class="stats-title">Projects Completed</li>
-                    <li class="stats-number">5</li>   
-                </ul>
-            </div>
-        </div>
-    </section>
 
-    <!-- Section C: Process Of My Full-Stack Web Development And UI/UX design working methods -->
-    <section id="home-c" class="text-center py-2">
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
         <div class="container">
-            <h2 class="section-title">
-                My Creative process
-            </h2>
-            <div class="bottom-line"></div>
-            <p class="lead">
-                All of Web Developments projects , UI/UX and design projects are based off of a practiced formula to get the result that I looking for
+            <div class="row align-items-center">
+                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
+                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/profile.jpeg" alt="">
+                </div>
+                <div class="col-lg-7 text-center text-lg-left">
+                    <h3 class="text-white font-weight-normal mb-3">I'm</h3>
+                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Pradip Golui</h1>
+                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+                    <div class="typed-text d-none">Web Designer, Front-End Developer, Back-End Developer, Full-Stak Developer</div>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                        <a target="_blank" href="/assets/Pradip_Golui_Resume.pdf" class="btn btn-outline-light mr-5">Download Resume</a>
+                        <!-- <button type="button" class="btn-play" data-toggle="modal"
+                            data-src="https://youtu.be/kR1JA1_QB5g?si=txGB7r7XvcFuHaKg" data-target="#videoModal">
+                            <span></span>
+                        </button>-->
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="about">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
+                <h1 class="position-absolute text-uppercase text-primary">About Me</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded w-100" src="img/about.jpeg" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-4">Web Designer & Full-Stack Developer</h3>
+                    <p> I’m an experienced Software Developer with over 5 years in the tech industry, specializing in building high-quality, impactful applications. I bring strong problem-solving skills, analytical thinking, and strategic decision-making to every project I take on.</p>
+                    <p>  Whether working independently or in a fast-paced team environment, I focus on delivering scalable and efficient solutions with precision. I’m passionate about clean code, thoughtful architecture, and continuous learning to stay ahead in the ever-evolving tech landscape.</p>
+                    <div class="row mb-3">
+                        <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">Pradip Golui</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Birthday: <span class="text-secondary">26 February 1998</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Degree: <span class="text-secondary">Bachelor</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Experience: <span class="text-secondary">5 Years</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Phone: <span class="text-secondary">+91 820 944 3799</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">pradipgolui77@gmail.com</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Address: <span class="text-secondary">Noida, Uttar Pradesh, India</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Freelance: <span class="text-secondary">Available</span></h6></div>
+                    </div>
+                    <a href="mailto:pradipgolui77@gmail.com" class="btn btn-outline-primary mr-4">Hire Me</a>
+                    <a href="" class="btn btn-outline-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Qualification Start -->
+    <div class="container-fluid py-5" id="qualification">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Education</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Education & Expericence</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">My Education</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Bachelor Of Computer Application</h5>
+                            <p class="mb-2"><strong>Rajasthan University</strong> | <small>2016 - 2019</small></p>
+                            <p>Bachelor of Computer Applications (BCA) is an undergraduate program focused on computer science, software development, and IT fundamentals. It builds a strong foundation in programming, databases, and networking, preparing students for tech-driven careers.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Higher Secondary Education</h5>
+                            <p class="mb-2"><strong>Rajasthan Board</strong> | <small>2014 - 2016</small></p>
+                            <p>Completed 12th grade in Commerce with a focus on accounting, economics, and business studies. Built a strong understanding of financial systems, business principles, and analytical thinking to support decision-making in real-world scenarios.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Secondary Education</h5>
+                            <p class="mb-2"><strong>Rajasthan Board</strong> | <small>2013 - 2014</small></p>
+                            <p>Completed 10th grade with a solid foundation in core subjects including mathematics, science, and languages. Developed essential academic and problem-solving skills that laid the groundwork for higher education.</p>
+                        </div>
+                        <div style="visibility: hidden;" class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Secondary Education</h5>
+                            <p class="mb-2"><strong>Rajasthan Board</strong> | <small>2013 - 2014</small></p>
+                            <p>Completed 10th grade with a solid foundation in core subjects including mathematics, science, and languages. Developed essential academic and problem-solving skills that laid the groundwork for higher education.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="mb-4">My Expericence</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Software Developer</h5>
+                            <p class="mb-2"><strong>HangingPanda Private Limited</strong> | <small>2021 - 2022</small></p>
+                            <p>Developed and tested RESTful APIs with Node.js and Express.js. Used MySQL and MongoDB for data storage, and implemented middleware and JWT for security.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Software Developer</h5>
+                            <p class="mb-2"><strong>Gventure Technology Private Limited</strong> | <small>2022 - 2023</small></p>
+                            <p>Worked on full-stack web apps using Angular and Node.js. Built RESTful APIs with MySQL, created reusable UI components, and ensured smooth frontend-backend integration. Used Git, GitHub, and SVN in an Agile setup.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Software Developer</h5>
+                            <p class="mb-2"><strong>Chetu India Private Limited</strong> | <small>2023 - 2025</small></p>
+                            <p>Built full-stack web apps using Angular, Node.js, and TypeScript. Developed RESTful APIs, integrated MySQL/MongoDB, implemented JWT auth, and deployed apps with PM2 and Nginx. Contributed to UI components, performance optimization, and Agile team collaboration.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Freelance Software Developer</h5>
+                            <p class="mb-2"><strong>Freelance Platform</strong> | <small>2025 - Present</small></p>
+                            <p>Built full-stack web apps using Angular, Node.js, and TypeScript. Developed RESTful APIs, integrated MySQL/MongoDB, implemented JWT auth, and deployed apps with PM2 and Nginx. Contributed to UI components, performance optimization, and Agile team collaboration.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Qualification End -->
+
+
+    <!-- Skill Start -->
+
+    <div class="container-fluid py-5" id="skill">
+        <div class="container">
+          <div class="position-relative d-flex align-items-center justify-content-center mb-4">
+            <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
+            <h1 class="position-absolute text-uppercase text-primary">My Skills</h1>
+          </div>
+      
+          <div class="row text-center mb-4">
+            <!-- Language & Frontend -->
+            <div class="col-4 col-md-2 mb-3"><i class="fab fa-html5 fa-2x text-danger mb-1"></i><div>HTML</div></div>
+            <div class="col-4 col-md-2 mb-3"><i class="fab fa-css3-alt fa-2x text-primary mb-1"></i><div>CSS</div></div>
+            <div class="col-4 col-md-2 mb-3"><i class="fab fa-js-square fa-2x text-warning mb-1"></i><div>JavaScript</div></div>
+            <div class="col-4 col-md-2 mb-3"><i class="fab fa-bootstrap fa-2x text-indigo mb-1"></i><div>Bootstrap</div></div>
+            <div class="col-4 col-md-2 mb-3"><i class="fas fa-code fa-2x text-info mb-1"></i><div>Tailwind CSS</div></div>
+            <div class="col-4 col-md-2 mb-3"><i class="fab fa-angular fa-2x text-danger mb-1"></i><div>AngularJS</div></div>
+            <div class="col-4 col-md-2 mb-3"><i class="fab fa-angular fa-2x text-danger mb-1"></i><div>Angular</div></div>
+            <div class="col-4 col-md-2 mb-3"><i class="fab fa-react fa-2x text-info mb-1"></i><div>React</div></div>
+            <div class="col-4 col-md-2 mb-3"><i class="fas fa-code fa-2x text-muted mb-1"></i><div>TypeScript</div></div>
+            <div class="col-4 col-md-2 mb-3"><i class="fas fa-database fa-2x text-muted mb-1"></i><div>SQL</div></div>
+            <div class="col-4 col-md-2 mb-3"><i class="fab fa-docker fa-2x text-info mb-1"></i><div>Docker</div></div>
+            <div class="col-4 col-md-2 mb-3"><i class="fab fa-python fa-2x text-warning mb-1"></i><div>Python</div></div>
+            <div class="col-4 col-md-2 mb-3"><i class="fas fa-sync fa-2x text-purple mb-1"></i><div>Redux</div></div>
+      
+            <!-- Backend & APIs -->
+            <div class="col-4 col-md-2 mb-3"><i class="fab fa-node fa-2x text-success mb-1"></i><div>Node.js</div></div>
+            <div class="col-4 col-md-2 mb-3"><i class="fas fa-server fa-2x text-secondary mb-1"></i><div>Express.js</div></div>
+            <div class="col-4 col-md-2 mb-3"><i class="fas fa-comments fa-2x text-primary mb-1"></i><div>Socket.io</div></div>
+            <div class="col-4 col-md-2 mb-3"><i class="fas fa-link fa-2x text-warning mb-1"></i><div>RESTful APIs</div></div>
+            <div class="col-4 col-md-2 mb-3"><i class="fas fa-key fa-2x text-info mb-1"></i><div>JWT</div></div>
+      
+            <!-- Databases -->
+            <div class="col-4 col-md-2 mb-3"><i class="fas fa-database fa-2x text-success mb-1"></i><div>MySQL</div></div>
+            <div class="col-4 col-md-2 mb-3"><i class="fas fa-leaf fa-2x text-success mb-1"></i><div>MongoDB</div></div>
+      
+            <!-- Tools -->
+            <div class="col-4 col-md-2 mb-3"><i class="fab fa-git-alt fa-2x text-warning mb-1"></i><div>Git</div></div>
+            <div class="col-4 col-md-2 mb-3"><i class="fab fa-github fa-2x text-dark mb-1"></i><div>GitHub</div></div>
+            <div class="col-4 col-md-2 mb-3"><i class="fas fa-code-branch fa-2x text-muted mb-1"></i><div>SVN</div></div>
+            <div class="col-4 col-md-2 mb-3"><i class="fab fa-jira fa-2x text-primary mb-1"></i><div>Jira</div></div>
+            <div class="col-4 col-md-2 mb-3"><i class="fas fa-vial fa-2x text-danger mb-1"></i><div>Postman</div></div>
+            <div class="col-4 col-md-2 mb-3"><i class="fas fa-code fa-2x text-info mb-1"></i><div>VS Code</div></div>
+            <div class="col-4 col-md-2 mb-3"><i class="fab fa-npm fa-2x text-danger mb-1"></i><div>NPM</div></div>
+            <div class="col-4 col-md-2 mb-3"><i class="fas fa-book fa-2x text-info mb-1"></i><div>Swagger</div></div>
+            <div class="col-4 col-md-2 mb-3"><i class="fab fa-figma fa-2x text-pink mb-1"></i><div>Figma</div></div>
+            <div class="col-4 col-md-2 mb-3"><i class="fas fa-file-word fa-2x text-primary mb-1"></i><div>MS Office</div></div>
+          </div>
+        </div>
+      </div>
+    <!-- Skill End -->
+
+
+    <!-- Services Start -->
+    <div class="container-fluid pt-5" id="service">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Service</h1>
+                <h1 class="position-absolute text-uppercase text-primary">My Services</h1>
+            </div>
+            <div class="row pb-3">
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Web Design (UI/UX)</h4>
+                    </div>
+                    <p>Design clean, intuitive, and user-friendly interfaces using tools like Figma or Adobe XD, focusing on layout, accessibility, and branding consistency.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-laptop-code service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Web Development</h4>
+                    </div>
+                    <p>Build responsive, user-friendly, and scalable web apps using modern frontend (React, Angular, etc.) and backend (Node.js, Express, etc.) technologies.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fab fa-2x fa-android service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">API Development</h4>
+                    </div>
+                    <p>Create secure APIs using Node.js and Express, and integrate third-party services like Stripe, Firebase, or Google APIs.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fab fa-2x fa-apple service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Website Deployment & Hosting</h4>
+                    </div>
+                    <p>Deploy apps on Netlify, Vercel, Render, or cloud platforms like AWS, and handle domain setup, SSL, and continuous deployment.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-search service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Performance Optimization & SEO</h4>
+                    </div>
+                    <p>Improve website speed, reduce load times, implement lazy loading, and apply basic SEO best practices for better visibility and user experience.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-edit service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Bug Fixing & Maintenance</h4>
+                    </div>
+                    <p>Provide technical support, fix bugs, refactor legacy code, and ensure smooth, high-performance user experiences.</p>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+
+
+    <!-- Portfolio Start -->
+    <div class="container-fluid pt-5 pb-3" id="portfolio">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Gallery</h1>
+                <h1 class="position-absolute text-uppercase text-primary">My Portfolio</h1>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center mb-2">
+                    <ul class="list-inline mb-4" id="portfolio-flters">
+                        <li class="btn btn-sm btn-outline-primary m-1 active"  data-filter="*">All</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">Design</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Development</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">Marketing</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row portfolio-container">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-1.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-1.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-2.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-2.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-3.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-3.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-4.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-4.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-5.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-5.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-6.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-6.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio End -->
+
+
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-5" id="contact">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Contact Me</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form text-center">
+                        <div id="success"></div>
+                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                            <div class="form-row">
+                                <div class="control-group col-sm-6">
+                                    <input type="text" class="form-control p-4" id="name" placeholder="Your Name"
+                                        required="required" data-validation-required-message="Please enter your name" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group col-sm-6">
+                                    <input type="email" class="form-control p-4" id="email" placeholder="Your Email"
+                                        required="required" data-validation-required-message="Please enter your email" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <input type="text" class="form-control p-4" id="subject" placeholder="Subject"
+                                    required="required" data-validation-required-message="Please enter a subject" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
+                                    required="required"
+                                    data-validation-required-message="Please enter your message"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div>
+                                <button class="btn btn-outline-primary" type="submit" id="sendMessageButton">Send
+                                    Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="container text-center py-5">
+            <div class="d-flex justify-content-center mb-4">
+                <a class="btn btn-light btn-social mr-2" target="_blank" href="mailto:pradipgolui77@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                <a class="btn btn-light btn-social mr-2" target="_blank" href="https://github.com/pradipgolui"><i class="fab fa-github"></i></a>
+                <a class="btn btn-light btn-social mr-2" target="_blank" href="https://www.linkedin.com/in/pradipgolui/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-light btn-social mr-2" target="_blank" href="https://x.com/pradipgolui"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-light btn-social" target="_blank" href="https://www.instagram.com/pradipgolui/"><i class="fab fa-instagram"></i></a>       
+            </div>
+            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">Pradip Golui | 2025</a>  
             </p>
-            <div class="process">
-                <div>
-                    <i class="fas fa-file-alt fa-4x process-icon my-2">
-                        <div class="process-step">1</div>
-                    </i>
-                    <h3>Discuss The Project</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit voluptatibus maxime quos itaque inventore id.</p>
-                </div>
-                <div>
-                    <i class="fas fa-desktop fa-4x process-icon my-2">
-                        <div class="process-step">2</div>
-                    </i>
-                    <h3>Brainstorming ^ concept</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit voluptatibus maxime quos itaque inventore id.</p>
-                </div>
-                <div>
-                    <i class="fas fa-object-ungroup fa-4x process-icon my-2">
-                        <div class="process-step">3</div>
-                    </i>
-                    <h3>UI/UX Planning</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit voluptatibus maxime quos itaque inventore id.</p>
-                </div>
-                <div>
-                    <i class="fas fa-thumbs-up fa-4x process-icon my-2">
-                        <div class="process-step">4</div>
-                    </i>
-                    <h3>Interaction</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit voluptatibus maxime quos itaque inventore id.</p>
-                </div>
-            </div>
         </div>
-    </section>
+    </div>
+    <!-- Footer End -->
 
-    <!-- Footer Section Of The Portfolio -->
-    <footer id="main-footer">
-        <div class="footer-content container">
-            <p>Copyright &copy; 2021 All Rights Reserved || Developed By Pradip Golui</p>
-            <!-- Social Media Icons Of Pradip Golui -->
-            <div class="social">
-                <a href="https://twitter.com/pradipgolui" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/in/pradipgolui/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/pradipgolui" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.facebook.com/pradipgolui1"target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/pradipgolui/"target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.youtube.com/channel/UCoAEr4m60OR0Jt-GytBSvTg"target="_blank"><i class="fab fa-youtube"></i></a>
-            </div>
-        </div>
-    </footer>
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
 
-    <!-- Typewritter Effect Of Jumbotron In Main Header Section  -->
-    <script src="js/typewriter.js"></script>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>
